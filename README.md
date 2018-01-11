@@ -11,7 +11,6 @@ Reconstruct the 3D model for workpiece by robot UR10
 * Connect the Ethernet and set the ip address as 192.168.1.x. ping 192.168.1.10 to check whether the first robot is connected
 * The robot in the lab is UR v3.x. So we need to install UR modern driver from: https://github.com/ThomasTimm/ur_modern_driver 
 Note:  swapping every instance of ->hardware_interface for ->claimed_resources.at(0).hardware_interface in ur_modern_driver/src/ur_hardware_interface.cpp allows the package to build in Kinetic.
-
 To bring up the real robot, run the following command after replacing IP_OF_THE_ROBOT with the actual hardware's address:
 ```
 roslaunch ur_modern_driver ur10_bringup.launch limited:=true robot_ip:=IP_OF_THE_ROBOT [reverse_port:=REVERSE_PORT]
