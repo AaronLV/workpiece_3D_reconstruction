@@ -14,7 +14,7 @@ Reconstruct the 3D model for workpiece by robot UR10
 roslaunch ur_modern_driver ur10_bringup.launch limited:=true robot_ip:=IP_OF_THE_ROBOT [reverse_port:=REVERSE_PORT]
 ```
 
-## . Using MoveIt! with hardware
+## 3. Using MoveIt! with hardware
 Note that as MoveIt! seems to have difficulties with finding plans for the UR with full joint limits [-2pi, 2pi], there is a joint_limited version using joint limits restricted to [-pi,pi]. In order to use this joint limited version, simply use the launch file arguments 'limited', i.e.:
 ```
 roslaunch ur_modern_driver ur10_bringup.launch limited:=true robot_ip:=IP_OF_THE_ROBOT [reverse_port:=REVERSE_PORT]
