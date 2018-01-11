@@ -23,4 +23,5 @@ roslaunch ur10_moveit_config moveit_rviz.launch config:=true
 ```
 
 
-This is modified from:http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
+This is modified from:
+http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
