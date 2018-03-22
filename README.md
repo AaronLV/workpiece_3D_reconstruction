@@ -24,6 +24,9 @@ roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=true
 roslaunch ur10_moveit_config moveit_rviz.launch config:=true
 ```
 
+## 3. Using Gazebo
+Follow the instructions in the website below, we can easily manipulate the UR robot in virtual world!
+http://wiki.ros.org/ur_gazebo
 
 This is modified from:
 http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
