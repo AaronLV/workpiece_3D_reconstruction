@@ -25,8 +25,23 @@ roslaunch ur10_moveit_config moveit_rviz.launch config:=true
 ```
 
 ## 3. Using Gazebo
-Follow the instructions in the website below, we can easily manipulate the UR robot in virtual world!
-http://wiki.ros.org/ur_gazebo
+Follow the instructions below, we can easily manipulate the UR robot in virtual world!
+modified from http://wiki.ros.org/ur_gazebo
+To launch the simulated arm and a controller for it, run:
+```
+roslaunch ur_gazebo ur10.launch
+```
+and in another terminal:
+
+```
+roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch sim:=true
+```
+To control the simulated arm from RViz, also run:
+
+```
+roslaunch ur10_moveit_config moveit_rviz.launch config:=true
+```
+You should now be able to move the end effector goal to create a plan for the simulated arm to execute.
 
 This is modified from:
 http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
