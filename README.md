@@ -24,6 +24,9 @@ roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=true
 roslaunch ur10_moveit_config moveit_rviz.launch config:=true
 ```
 
+This is modified from:
+http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
+
 ## 3. Using Gazebo
 Follow the instructions below, we can easily manipulate the UR robot in virtual world!
 modified from http://wiki.ros.org/ur_gazebo
@@ -43,5 +46,8 @@ roslaunch ur10_moveit_config moveit_rviz.launch config:=true
 ```
 You should now be able to move the end effector goal to create a plan for the simulated arm to execute.
 
-This is modified from:
-http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial
+## 4 . Attach a RGBD camera to UR10 robot
+The model of UR10 robot is written in URDF files(older version compared with SDF files)
+These are their differences.http://answers.gazebosim.org/question/62/sdf-vs-urdf-what-should-one-use/
+There is also method to convert URDF to SDF.http://answers.gazebosim.org/question/7074/urdf-to-sdf-conversion-using-gzsdf/
+
