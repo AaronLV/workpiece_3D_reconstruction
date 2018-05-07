@@ -51,3 +51,8 @@ The model of UR10 robot is written in URDF files(older version compared with SDF
 These are their differences.http://answers.gazebosim.org/question/62/sdf-vs-urdf-what-should-one-use/
 There is also method to convert URDF to SDF.http://answers.gazebosim.org/question/7074/urdf-to-sdf-conversion-using-gzsdf/
 
+## 5 . Octomap
+We can output the point cloud to an Octomap for environment reconstruction
+```
+roslaunch octomap_server test_octomap.launch
+```
